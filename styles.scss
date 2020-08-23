@@ -1,0 +1,200 @@
+
+$secondary:#303b92;
+
+@import "animation";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap/scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+$enable-responsive-font-sizes:  true; 
+
+.my-logo{
+    background-color: #f4f4f4;
+}
+.section-0-logo{
+    
+    a{
+        color: white!important;
+    }
+}
+.section-1{
+    position: relative;
+    .my-form-control{
+        height: 60px;
+        width: 100%;
+        border-radius: 50px;
+    }
+    .cercle{
+        position: absolute;
+        bottom:  30px;
+        right: 1px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        // border: 2px solid #303b92;
+        // background-color: #303b92;
+        color: white;
+    }
+}
+
+.section-2{
+    position: relative;
+    background-image: url(img/hero/h1_hero.png);
+   
+    .row{
+        background-image: url(img/hero/heroman.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .one1{
+        padding: 200px 50px;
+        
+    }
+    h4{
+        color: #303b92;
+        font-size: 3vw;
+    }
+    a{
+        background-color: #303b92;
+        border-radius: 0;
+    }
+    h1{
+        font-size: 5vw;
+    }
+   
+    
+}
+
+.section-3{
+    .my-card-style:hover{
+        cursor: pointer;
+         background-color: #303b92!important;
+         color: white!important;
+         .fa{
+             color: white!important;
+         }
+        }
+    
+    .fa{
+        color: #303b92!important;
+    }
+}
+
+.my-top{
+    position: fixed;
+    left: 85%;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #303b92;
+    z-index: 3;
+    i{
+        position: absolute;
+        left: 12px;
+        top: 6px;
+        font-size: 40px;
+        color: white;
+    }
+}
+
+
+   
+    .section-6{
+        .fa-star{
+            color: rgb(255, 187, 0);
+        }
+        a{
+            font-size: 25px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .btn-1{
+            background-color: #303b92;
+            border-radius: none!important;
+        }
+    }
+    .section-7{
+       min-height: 50vh;
+       background-color: #303b92;
+        .section-7a{
+            background-image: url(img/gallery/section_bg02.png);
+            background-repeat: no-repeat;
+            color: white;
+            
+        }
+        a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        h1{
+         font-size: 2vw;
+        }
+    }
+
+.section-8{
+   
+            
+}
+.section-9{
+    background-color: #0b0b1d;
+    color: white;
+    .pa{
+        border-radius: none!important;
+        outline-color: $primary;
+        box-shadow: 2px 2px 2px 2px #0b0b1d;
+    }
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .se{
+        
+        &:hover{
+            color: white!important;
+            margin-left: 10px;
+            transition: margin-left 300ms ease-in-out;
+        }
+       
+    }
+    .line{
+        height: 1px;
+        border: 1px solid gray;
+        margin-bottom: 40px;
+    }
+    p{
+       padding-bottom: 50px;
+    }
+    .simon{
+        
+        border-radius: 20px!important;
+    }
+    .mama{
+        margin-bottom: 30px;
+    }
+}
+    
+
+@media screen and (max-width:992px){
+    .my-logo{
+        background-color: #fff;
+    }
+    .my-form, .section-0, .two1{
+        display: none;
+    }
+  
+    .section-2{
+        background-image: url(img/hero/h1_hero.png);
+       
+        .row{
+            background-image:none;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        
+        
+        
+    }
+}
